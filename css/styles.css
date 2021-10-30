@@ -349,6 +349,7 @@ body {
 .form-input {
   width: 100%;
   padding: 11px 12px 11px 42px;
+  outline: none;
 }
 
 .border-input:focus,
@@ -373,6 +374,7 @@ body {
   line-height: 1.15;
   letter-spacing: 0.01em;
   padding: 11px 16px;
+  outline: none;
   resize: none;
 }
 
@@ -403,8 +405,9 @@ body {
   background-color: var(--color-hover-focus);
 }
 
-.checkbox-input:focus-within + .checkbox-icon {
-  box-shadow: 0 0 0 2px var(--color-black);
+.checkbox-input:focus-within + .checkbox-icon,
+.checkbox-input:hover + .checkbox-icon {
+  transform: scale(1.1);
 }
 
 .checkbox-text {
